@@ -1,0 +1,51 @@
+\documentclass{article}
+                
+                
+% create a settings file with all settings included                
+\input{setup/settings}
+
+\title{Exploration and Presentation \LaTeX}
+\author{Jörg Oertel}
+\date{March 2021}
+
+\begin{document}
+
+% deletes the front-page page number 
+\clearpage\maketitle
+\thispagestyle{empty}
+
+\tableofcontents
+
+\clearpage
+
+\section{Introduction}
+
+The first assignment is to find the requirements of a bachelor thesis. The requirements has to be written in \LaTeX and the sources has to be documented.
+\linebreak
+The second assignment is to produce a template in \LaTeX, that we can use in our bachelor thesis.
+
+\clearpage
+
+\section{Assignment 1}
+\input{input/assignment_latex}
+
+\clearpage
+\input{input/latex_guide}
+
+\clearpage
+
+\section{Assignment 2}
+\input{input/assignment_bachelor}
+
+\clearpage
+
+\section{Conclusion}
+``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
+
+
+\clearpage
+
+\bibliographystyle{plain}
+\bibliography{bib/references}
+\listoftodos[Notes]
+\end{document}

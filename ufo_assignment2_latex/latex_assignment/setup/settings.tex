@@ -1,0 +1,77 @@
+
+% package for compiling ASCII input
+\usepackage[utf8]{inputenc}
+% fontenc – Standard package for selecting font encoding
+\usepackage[T1]{fontenc}
+% English language package
+\usepackage[english]{babel}
+% natbib package is used for citations
+\usepackage{natbib}
+% graphicx – Enhanced support for graphics
+\usepackage{graphicx}
+% https://ctan.math.illinois.edu/macros/latex/contrib/genealogytree/genealogytree.pdf
+\usepackage{genealogytree}
+%========================================
+% package for hyperlinks
+% links also Contents to the appropriate page
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+%========================================
+% I used this package for the two images task
+\usepackage{subfig}
+% this package is used to get the different list styles (brackets, roman...)
+\usepackage{amssymb}
+%prevents figures ever floating backwards up the current page.
+\usepackage{flafter}  
+% This package provides user control over the layout of the three basic list environments: enumerate, itemize and description.
+\usepackage{enumitem} 
+
+%========================================
+
+% TO-DO NOTES
+
+\usepackage{lipsum} % Dummy text
+\usepackage{xargs}  % Use more than one optional parameter in a new commands
+\usepackage[pdftex,dvipsnames]{}  % Coloured text etc.
+
+% SETUP FOR DIFFERENT TO-DOS SECTIONS
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=green,backgroundcolor=green!25,bordercolor=green,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=orange,backgroundcolor=orange!25,bordercolor=orange,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
+%========================================
+
+% SETUP JAVA CODE
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+%========================================
